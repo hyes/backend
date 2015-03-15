@@ -1,3 +1,4 @@
+package reactor;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.StringTokenizer;
@@ -7,8 +8,6 @@ public class StreamUpdateProfileEventHandler implements EventHandler {
 
 	private static final int DATA_SIZE = 1024;
 	private static final int TOKEN_NUM = 5;
-	
-	
 	
 	@Override
 	public String getHandler() {
@@ -38,6 +37,6 @@ public class StreamUpdateProfileEventHandler implements EventHandler {
 }
 	
 	private void updateProfile(String[] param){
-		System.out.println("UpdateProfile id: " + param[0] + ", password: " + param[1] +", name: " + param[2] + ", age: " + param[3] + ", gender: " + param[4]);
+		System.out.println("UpdateProfile ID: " + param[0] + ", password: " + param[1] +", name: " + param[2] + ", age: " + param[3] + ", gender: " + param[4]);
 	}
 }

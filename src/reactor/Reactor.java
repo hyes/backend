@@ -1,3 +1,4 @@
+package reactor;
 import java.io.IOException;
 import java.net.ServerSocket;
 
@@ -19,11 +20,14 @@ public class Reactor {
 	
 	
 	public void startServer(){
-		Dispatcher dispatcher = new Dispatcher();
+		//Dispatcher dispatcher = new ThreadPerDispatcher();
+		Dispatcher dispatcher = new ThreadPoolDispatcher();
 		
-		while(true){
-			dispatcher.dispatch(serverSocket, handleMap);
-		}
+	//	while(true){
+		
+		dispatcher.dispatch(serverSocket, handleMap);
+			
+	//	}
 	}
 	
 	public void registerHandler(String header, EventHandler handler){

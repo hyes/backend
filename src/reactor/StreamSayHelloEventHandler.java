@@ -1,3 +1,4 @@
+package reactor;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.StringTokenizer;
@@ -37,6 +38,6 @@ public class StreamSayHelloEventHandler implements EventHandler {
 }
 	
 	private void sayHello(String[] param){
-		System.out.println("SayHello name: " + param[0] + ", age: " + param[1]);
+		System.out.println("SayHello Name: " + param[0] + ", Age: " + param[1]);
 	}
 }
