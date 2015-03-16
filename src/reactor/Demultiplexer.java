@@ -6,7 +6,7 @@ import java.net.Socket;
 
 public class Demultiplexer implements Runnable {
 
-	private final int HEADER_SIZE =6;
+	private final int HEADER_SIZE = 6;
 	
 	private Socket socket;
 	private HandleMap handleMap;

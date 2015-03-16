@@ -15,12 +15,12 @@ public class ServerInitializer {
 		
 		
 		Reactor reactor = new Reactor(port);
-//		System.out.println("qw");
+//		
 		
 		try{
 			Serializer serializer = new Persister();
 			File source = new File("HandlerList.xml");
-			ServerListData serverList = serializer.read(ServerListData.class,  source);
+			ServerListData serverList = serializer.read(ServerListData.class, source);
 			
 			for(HandlerListData handlerListData : serverList.getServer()){
 				if("server1".equals(handlerListData.getName())){

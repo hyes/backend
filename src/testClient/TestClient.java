@@ -13,6 +13,7 @@ public class TestClient {
 		
 		System.out.println("Client ON");
 	
+		while(true){
 		try{
 		String message;
 		
@@ -28,10 +29,12 @@ public class TestClient {
 		out2.write(message.getBytes());
 		socket2.close();
 		
+		
 		}catch(UnknownHostException e){
 			e.printStackTrace();
 		}catch(IOException e){
 			e.printStackTrace();
+		}
 		}
 		
 	}
