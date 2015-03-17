@@ -12,7 +12,7 @@ public class NioSayHelloEventHandler implements NioEventHandler{
 	private ByteBuffer buffer;
 
 	@Override
-	public String getHandle() {
+	public String getHeader() {
 		return "0x5001";
 	}
 

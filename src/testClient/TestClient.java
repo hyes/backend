@@ -30,6 +30,12 @@ public class TestClient {
 		socket2.close();
 		
 		
+		Socket socket3 = new Socket("127.0.0.1", 5010);
+		OutputStream out3 = socket3.getOutputStream();
+		message = "0x7001|qweqweqeqweqe";
+		out3.write(message.getBytes());
+		socket3.close();
+		
 		}catch(UnknownHostException e){
 			e.printStackTrace();
 		}catch(IOException e){

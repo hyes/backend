@@ -30,6 +30,7 @@ public class Demultiplexer implements CompletionHandler<Integer, ByteBuffer>{
 			ByteBuffer newBuffer = ByteBuffer.allocate(handler.getDataSize());
 			handler.initialize(channel, newBuffer);
 			channel.read(newBuffer, newBuffer, handler);
+			
 //			String msg = new String(buffer.array());
 //			System.out.println("echo: " + msg);
 			

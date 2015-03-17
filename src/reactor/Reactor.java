@@ -20,8 +20,8 @@ public class Reactor {
 	
 	
 	public void startServer(){
-		//Dispatcher dispatcher = new ThreadPerDispatcher();
-		Dispatcher dispatcher = new ThreadPoolDispatcher();
+		Dispatcher dispatcher = new ThreadPerDispatcher();
+		//Dispatcher dispatcher = new ThreadPoolDispatcher();
 		
 	//	while(true){
 		

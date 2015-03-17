@@ -26,8 +26,7 @@ public class ThreadPoolDispatcher implements Dispatcher{
 		thread.start();
 		System.out.println("Create and started Thread = " + thread.getName());
 	}
-	System.out.println("Iterative server starting in main thread " + 
-	Thread.currentThread().getName());
+	System.out.println("Iterative server starting in main thread " + Thread.currentThread().getName());
 	
 		dispatchLoop(serverSocket, handleMap);
 		
